@@ -1,0 +1,9 @@
+name: classify_css
+version: 0.1.0
+author: David Peek <ninjascript@gmail.com>
+description: A library for classifying CSS.
+homepage: https://github.com/dpeek/dart-classify-css
+dependencies:
+  csslib: ">=0.4.6"
+dev_dependencies:
+  unittest: any
