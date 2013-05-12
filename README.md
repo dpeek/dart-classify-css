@@ -1,12 +1,9 @@
-classify_html
-=============
+classify_css
+============
 
-An HTML classifier. Parses a string of HTML5 and wraps each token (element, 
-attribute, string, etc) with a `span` and a defined set of CSS classes. Used to 
-add syntax coloring to documentation and code examples.
-
-Supports extendible mixed mode highlighing of other inline syntax (ie. CSS, 
-JavaScript or Dart).
+An CSS classifier. Parses a string of CSS and wraps each token with a `span` 
+and a defined set of CSS classes. Used to add syntax coloring to documentation 
+and code examples.
 
 Installation
 ------------
@@ -14,7 +11,7 @@ Installation
 Add this to your `pubspec.yaml` (or create it):
 ```yaml
 dependencies:
-  classify_html: any
+  classify_css: any
 ```
 Then run the [Pub Package Manager][pub] (comes with the Dart SDK):
 
@@ -24,10 +21,10 @@ Usage
 -----
 
 ```dart
-import "package:classify_html/classify_html.dart" show classifyHtml;
+import "package:classify_css/classify_css.dart";
 
 main() {
-  print(classifyHtml("<span class='foo'>value</span>"));
+  print(classifyCss("html { padding: 10px; }"));
 }
 ```
 
